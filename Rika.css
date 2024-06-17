@@ -19,6 +19,7 @@ header.main-header {
     width: 100%;
     height: 300px;
     object-fit: cover;
+    object-position: top; /* Adjust to use the top portion of the image */
     filter: brightness(50%);
 }
 
