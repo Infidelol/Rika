@@ -29,29 +29,24 @@ header.main-header {
     position: relative;
     text-align: left;
     color: white;
-    padding: 20px;
-}
-
-.header-image {
     width: 100%;
-    height: auto;
-    display: block;
-    object-fit: contain;
+    height: 300px;
+    background: url('pictures/pic3.jpg') no-repeat center center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
 }
 
 header.main-header .wild-font {
-    position: absolute;
-    top: 50%;
-    left: 20px;
-    transform: translateY(-50%);
     font-size: 4rem;
-    font-family: 'Brush Script MT', cursive;
+    font-family: 'Cinzel', serif; /* Updated font */
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
 .dropdown {
     position: relative;
-    margin-top: -40px;
+    margin-top: 10px;
     margin-left: 20px;
 }
 
@@ -63,7 +58,7 @@ header.main-header .wild-font {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    font-family: 'Brush Script MT', cursive;
+    font-family: 'Cinzel', serif; /* Matching header font */
 }
 
 .dropdown-content {
@@ -117,7 +112,7 @@ header.main-header .wild-font {
 }
 
 .bio-content .small-image img {
-    max-width: 150px;
+    max-width: 200px; /* Increased size */
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
