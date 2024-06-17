@@ -8,19 +8,35 @@ body, html {
     overflow-y: auto;
 }
 
+.video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.video-background video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.3;
+}
+
 header.main-header {
     position: relative;
     text-align: left;
     color: white;
-    padding-right: 20px;
+    padding: 20px;
 }
 
 .header-image {
     width: 100%;
-    height: 300px;
-    object-fit: cover;
-    object-position: top; /* Adjust to use the top portion of the image */
-    filter: brightness(50%);
+    height: auto;
+    display: block;
+    object-fit: contain;
 }
 
 header.main-header .wild-font {
@@ -28,15 +44,15 @@ header.main-header .wild-font {
     top: 50%;
     left: 20px;
     transform: translateY(-50%);
-    font-size: 5rem;
+    font-size: 4rem;
     font-family: 'Brush Script MT', cursive;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
 .dropdown {
-    position: absolute;
-    bottom: 20px;
-    left: 20px;
+    position: relative;
+    margin-top: -40px;
+    margin-left: 20px;
 }
 
 .dropbtn {
@@ -57,7 +73,6 @@ header.main-header .wild-font {
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
-    right: 0;
 }
 
 .dropdown-content a {
@@ -76,7 +91,7 @@ header.main-header .wild-font {
 }
 
 .bio {
-    max-width: 800px;
+    max-width: 1000px;
     margin: 20px auto;
     padding: 20px;
     background: url('pictures/pic1.jpg') no-repeat center center/cover;
@@ -84,6 +99,7 @@ header.main-header .wild-font {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 0, 255, 0.5);
+    min-height: 70vh;
 }
 
 .bio h2 {
@@ -92,19 +108,16 @@ header.main-header .wild-font {
 }
 
 .bio-content {
-    background-color: rgba(0, 0, 0, 0.5);
     padding: 20px;
-    border-radius: 10px;
 }
 
 .bio-content .small-image {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
+    float: left;
+    margin-right: 20px;
 }
 
 .bio-content .small-image img {
-    max-width: 200px;
+    max-width: 150px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
@@ -114,28 +127,10 @@ header.main-header .wild-font {
     max-width: 600px;
     margin: 20px auto;
     padding: 20px;
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(255, 255, 255, 0.8);
     color: #333;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-}
-
-.contact .video-background {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    z-index: -1;
-    border-radius: 10px;
-}
-
-.contact .video-background video {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    opacity: 0.3;
 }
 
 .contact h2 {
