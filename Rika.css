@@ -81,82 +81,25 @@ header.main-header .wild-font {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
-.dropdown {
-    position: absolute;
-    bottom: 10px;
-    left: 20px; /* Changed to left */
-    transition: opacity 0.5s ease-in-out;
-}
-
-.dropbtn {
-    background-color: rgb(16, 85, 18);
-    color: white;
-    padding: 10px 20px;
-    font-size: 1.2rem;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-family: Arial, sans-serif;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-}
-
-.dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-}
-
-.dropdown-content a:hover {
-    background-color: #f1f1f1;
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
-.dropdown.transparent {
-    opacity: 0;
-}
-
 .bio {
     max-width: 1000px;
-    margin: 40px auto; /* Increased margin to center the section */
-    padding: 40px; /* Increased padding */
-    background: url('pictures/pic1.jpg') no-repeat center center/cover;
-    color: white;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    margin: 40px auto;
+    padding: 40px;
+    background: rgba(255, 255, 255, 0.8);
+    color: #333;
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 0, 255, 0.5);
     min-height: 70vh;
 }
 
-.bio h2 {
-    text-align: center;
-    font-size: 2.5rem;
+.bio h2, .bio h3 {
+    text-align: left;
+    font-family: 'Cinzel Decorative', cursive;
 }
 
-.bio-content {
-    padding: 20px;
-}
-
-.bio-content .small-image {
-    float: left;
-    margin-right: 20px;
-}
-
-.bio-content .small-image img {
-    max-width: 200px; /* Increased size */
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+.bio p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
 }
 
 .contact {
